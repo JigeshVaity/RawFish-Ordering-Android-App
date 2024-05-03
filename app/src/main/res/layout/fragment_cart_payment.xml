@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".order.CartPaymentFragment"
+    android:background="@color/light"
+
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="220dp"
+        android:background="@drawable/cardpayment"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/cardtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit card"
+            android:textSize="34dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="170dp"
+            android:fontFamily="@font/sahityabold"
+            />
+        <TextView
+            android:id="@+id/cardno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000 0000 0000 0000"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="125dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/bankgothicmediumbt"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:layout_marginTop="160dp"
+            android:layout_marginStart="35dp"
+            >
+
+            <TextView
+                android:id="@+id/cardholdername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="John hemmandez"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bankgothicmediumbt"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/expiredate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05/24"
+                android:textSize="18dp"
+                android:layout_marginStart="40dp"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/bankgothicmediumbt"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARD TYPE"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        />
+    <Spinner
+        android:id="@+id/inputcardtype"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARD NUMBER"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVC"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginStart="140dp"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputcardnumber"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="0000 0000 0000 0000"
+            android:inputType="number"
+            android:maxLength="16"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            />
+
+        <EditText
+            android:id="@+id/inputcardcvv"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:hint="CVC"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CARD HOLDER NAME"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        />
+    <EditText
+        android:id="@+id/inputcardholdername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="John hermandez"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPERITION DATE"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp">
+
+        <Spinner
+            android:id="@+id/monthSpinner"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/yearSpinner"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/paynow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay now"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:background="@drawable/btnbox"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+      />
+
+</LinearLayout>

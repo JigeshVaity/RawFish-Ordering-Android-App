@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="About us" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:textSize="17sp"
+        android:text="  An innovative online platform called the Raw Fish Ordering App was created to make
+buying fresh fish goods easier. The goal of this ground-breaking application is to improve the
+experience of customers as well as vendors in the seafood sector. A flexible order processing
+system that simplifies order placement and vendor order management are among the key
+characteristics, as are strong user authentication to provide secure access and effective product
+management tools that enable vendors to successfully present their offers.
+
+
+
+                      The software promises to improve the raw fish purchasing procedure by reducing the
+gap between buyers and sellers, providing convenience, quality, and dependability to all
+players. Customers can choose from a wide range of raw fish items, which makes it simpler for
+them to make informed choices. Vendors gain from improved visibility and simplified order
+fulfillment. In the end, the raw fish ordering app has the potential to modernize the seafood
+business by changing how raw fish products are bought and sold." />
+
+</LinearLayout>

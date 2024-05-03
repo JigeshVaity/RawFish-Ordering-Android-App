@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light"
+    android:orientation="vertical"
+    tools:context=".order.PaymentSuccess">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="36sp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:text="Payment Successful"
+       android:layout_gravity="center"
+       android:layout_marginTop="300dp"
+       />
+    <!-- Check Out Button -->
+    <Button
+        android:id="@+id/goplaceorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="go to place order"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:background="@drawable/btnbox"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</LinearLayout>

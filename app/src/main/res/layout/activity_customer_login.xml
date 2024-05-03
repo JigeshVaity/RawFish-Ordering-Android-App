@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    tools:context=".login.CustomerLogin">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:lottie_fileName="login.json"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:id="@+id/logintitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="180dp" >
+
+        <!-- Email EditText -->
+        <EditText
+            android:id="@+id/sign_in_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="5dp"
+            android:hint=" Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="65dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#454343"
+            android:textSize="20dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/email"
+            />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/sign_in_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_in_email"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="10dp"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:minHeight="65dp"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/password"
+            android:textColor="@color/black"
+            android:textColorHint="#454343"
+            android:background="@drawable/custom_edittext"
+            android:textSize="20dp"
+            android:drawableRight="@drawable/eye"
+            android:paddingRight="15dp"
+            />
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_in_password"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/btnbox"
+
+            android:padding="15dp"
+            android:text="Sign Up"
+            android:elevation="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center" >
+        <Button
+            android:id="@+id/back_customer_to_otp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bg"
+            android:padding="13dp"
+            android:text="Continue with phone no"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:elevation="10dp"
+            android:drawableLeft="@drawable/phone"
+            />
+        <!-- Sign Up for Customer Button -->
+        <Button
+            android:id="@+id/back_customer_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/bg"
+            android:padding="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Login as a Customer"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:elevation="10dp"
+            android:drawableLeft="@drawable/user"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

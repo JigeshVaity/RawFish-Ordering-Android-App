@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:id="@+id/addBtn"
+    android:elevation="3dp"
+    android:background="@drawable/white_recommended_btn"
+    app:cardBackgroundColor="#ECEBE6">
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_recommended_btn"
+        android:padding="5dp"
+        android:elevation="3dp"
+        >
+
+        <FrameLayout
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/raw"
+                android:background="@color/light"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fish Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/sizett"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish Name"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Q:"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    />
+                <TextView
+                    android:id="@+id/quantitytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1kg"
+                    android:textColor="#FB0303"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/downarrow"
+                    android:layout_marginStart="5dp"
+
+                    />
+                <TextView
+                    android:id="@+id/percentagetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20%"
+                    android:textColor="#4CAF50"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+
+                    android:background="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/originaltxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textColor="@color/grey"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="2dp"
+                    android:background="@color/white"
+                    />
+                <TextView
+                    android:id="@+id/priceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹400"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:background="@color/white"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/fee"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-2 day delivery"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
